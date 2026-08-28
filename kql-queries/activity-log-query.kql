@@ -1,0 +1,3 @@
+AzureActivity
+| where OperationNameValue has "delete" and ActivityStatusValue == "Success"
+| project TimeGenerated, SubscriptionId, ResourceGroup, Caller, OperationNameValue
