@@ -125,6 +125,11 @@ Resource Isolation: Keeps core operational logging separate from application wor
 
 ### Phase 4: Strategic Pivot to ARM REST API Payload Analysis
 Recognizing that standard Azure Portal dynamic content pickers were dropping context due to UI abstraction limitations, a **deliberate pivot to raw REST API payload inspection** was executed—treating the trigger mechanism as an ARM API Playground request stream:
+<img width="1798" height="799" alt="06b-phase3-sentinel-analytics-rules" src="https://github.com/user-attachments/assets/b8d8c13f-bc9c-488d-be2f-8fb3620bbae1" />
+
+<img width="1798" height="840" alt="06a-phase3-sentinel-analytics-rules" src="https://github.com/user-attachments/assets/4d8f9c97-8d83-48d3-9798-3ceb0d52d090" />
+
+<img width="1800" height="365" alt="06c-phase3-sentinel-analytics-rules" src="https://github.com/user-attachments/assets/8efca946-0900-4001-883f-643d43667371" />
 
 <img width="1826" height="768" alt="08-phase3-api-deprecation-troubleshooting" src="https://github.com/user-attachments/assets/d91b64df-d086-4af8-b70b-c28238cc3631" />
 
