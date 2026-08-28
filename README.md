@@ -126,6 +126,11 @@ Resource Isolation: Keeps core operational logging separate from application wor
 ### Phase 4: Strategic Pivot to ARM REST API Payload Analysis
 Recognizing that standard Azure Portal dynamic content pickers were dropping context due to UI abstraction limitations, a **deliberate pivot to raw REST API payload inspection** was executed—treating the trigger mechanism as an ARM API Playground request stream:
 
+<img width="1826" height="768" alt="08-phase3-api-deprecation-troubleshooting" src="https://github.com/user-attachments/assets/d91b64df-d086-4af8-b70b-c28238cc3631" />
+
+
+
+
 * **Raw Payload Discovery:** Exported and evaluated the incoming REST API JSON payload via the workflow's **Outputs Link** (`/contents/TriggerOutputs`):
   ```json
   {
@@ -155,7 +160,12 @@ Recognizing that standard Azure Portal dynamic content pickers were dropping con
 1. Saved the updated Logic App workflow.
 2. Triggered a fresh live test incident in Sentinel (`dummm5`, Incident #9).
 3. Monitored **Run history**: Execution completed in **2.01 seconds** with a `Succeeded` status.
-4. Confirmed notification delivery in the analyst inbox.
+
+<img width="1808" height="838" alt="11-phase4_logicapp_successful_run" src="https://github.com/user-attachments/assets/88a2f936-b219-41ac-87c4-8e09f5841458" />
+
+4. Confirmed notification delivery in THE ANALYST inbox.
+
+<img width="1132" height="658" alt="11b-phase4_logicapp_successfu-mailgmail_run" src="https://github.com/user-attachments/assets/70ec2d38-aec7-4dd1-b889-dd63e24911d9" />
 
 ---
 
